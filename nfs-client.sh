@@ -70,9 +70,9 @@ fi
 
 mntopts=
 if [ "$OS" = "Linux" ]; then
-    mntopts="rw,bg,sync,hard,intr,nolock"
+    mntopts="ro,bg,sync,hard,intr,nolock"
 else
-    mntopts="nfsv3,tcp,rw,bg,hard,intr"
+    mntopts="nfsv3,tcp,ro,bg,hard,intr"
 fi
 
 #
